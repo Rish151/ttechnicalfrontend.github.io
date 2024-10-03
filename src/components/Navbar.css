@@ -1,0 +1,137 @@
+.container {
+  max-width: 140rem;
+  padding: 4.2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+ul {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.mobMenu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bar {
+  width: 35px;
+  height: 1.5px;
+  background-color: #646cff;
+  margin: 3px 0;
+}
+
+.mobile-nav-links {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 6rem; /* Adjust according to your design */
+  right: 2.4rem; /* Adjust according to your design */
+  background: rgb(28, 27, 27);
+  border-radius: 1rem;
+  padding: 1rem; /* Increase padding for better spacing */
+  width: 20rem; /* Adjust width as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+@media screen and (max-width: 935px) {
+  .nav-links1 {
+    display: none;
+  }
+
+  .mobMenu {
+    display: flex;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .bar {
+    width: 30px;
+    height: 0.8px;
+  }
+  .logo-brand {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 610px) {
+  /* .container {
+    padding: 3rem 1.2rem;
+  } */
+
+  .logo-brand {
+    font-size: 1.8rem;
+  }
+  .bar {
+    width: 30px;
+    height: 0.5px;
+  }
+  .nav-links1 {
+    display: none;
+  }
+
+  .mobMenu {
+    display: flex;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-brand {
+    font-size: 1.8rem;
+  }
+  .bar {
+    width: 30px;
+    height: 0.5px;
+  }
+  .nav-links1 {
+    display: none;
+  }
+
+  .mobMenu {
+    display: flex;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo-brand {
+    font-size: 1.8rem;
+  }
+  .bar {
+    width: 30px;
+    height: 0.5px;
+  }
+  .nav-links1 {
+    display: none;
+  }
+
+  .mobMenu {
+    display: flex;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+  }
+}

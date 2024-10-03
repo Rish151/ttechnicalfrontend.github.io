@@ -1,0 +1,44 @@
+/* Add flex display to the body to allow footer to stick to the bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-content {
+  flex: 1; /* This ensures the main content grows to fill the available space */
+}
+
+.container {
+  max-width: 140rem;
+  padding: 4rem 2.4rem;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  background-color: #646cff; /* Changed background color to aqua */
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  margin-bottom: 0%;
+  height: 90px; /* Adjusted the height */
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer p {
+  color: black;
+  font-size: large;
+  font-size: 2rem; /* Increased the font size */
+  line-height: 0.5rem; /* Increased the line height */
+}
